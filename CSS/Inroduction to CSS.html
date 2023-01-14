@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumeCSS Tutorial</title>
+    <style>
+        p {
+            /* This is Internal CSS  */
+            color: cadetblue;
+            background-color: black;
+            /* background-color:black !important; 
+            For prioritising this command we can write !important;  */
+
+
+            /*  This will not work if inline css command is present as inline command gets prioritised. (Unless !important is written) */
+
+        }
+    </style>
+    <!-- Linking External CSS  -->
+    <link rel="stylesheet" href="tut.css">
+
+
+
+    <!-- Precedence b/w Internal and External CSS will be for that command which is written later. In this file External is written later...so External command will work. -->
+</head>
+
+<body>
+    <h2>CSS Tutorial</h2>
+    <!-- This is InLine CSS -->
+
+    <p style="color:brown; background-color:greenyellow"><b>This is tutorial for changing colur of text and highligting
+            it.</b>
+    </p>
+    <p><b>This is tutorial for changing colur of text and highligting it.</b></p>
+</body>
+
+</html>

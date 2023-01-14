@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Marging,Padding</title>
+    <style>
+        .container {
+            background-color: rgb(160, 92, 9);
+            border: 3px solid rgb(1, 5, 20);
+
+            /* padding: 12px;        for all directions */
+            /* padding-top: 12px;    we can set padding in any paruicular dirn.*/
+            /* padding-bottom: 12px; */
+            padding: 12px 50px 45px 50px;
+            /*Top, right, bottom , left */
+            /* padding: 34px 25px; [ padding = y(top/bottom) x(right/left) ] */
+
+            margin: 34px;
+            /*dirn as well for margin*/
+            
+            border-radius: 12px;
+            width: 580px;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="firstpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corrupti in ut dolorum
+            eius voluptate placeat dicta reiciendis voluptates quos, maxime animi asperiores. Cum exercitationem, magni
+            alias explicabo inventore incidunt nostrum vel quis voluptates?</p>
+    </div>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="secondpara">
+            This is Example pararaph 2 for testing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+            distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita voluptate quibusdam
+            omnis, iste laudantium nulla dolorem quas ex quaerat, nemo, officiis culpa qui. Vero odio nisi illum
+            dignissimos vitae similique nobis maiores aliquam!
+
+        </p>
+    </div>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="thirdpara">
+            This is Example pararaph 3s for testing. Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        .RedElement{
+            border: 2px solid red;
+            color:brown;
+        }
+        /* .BgColorYellow{
+            background-color: deepskyblue;
+        } */
+        #Secondpara{
+            color:brown;
+            background-color: deepskyblue;
+        }
+        footer,span{
+            background-color:pink ;
+        }
+
+        /* Descendent selector */
+        p a{                                      
+            color:aquamarine;
+                                       /* We can use these descendent Selector tags to select an element or group of elements. 
+                                       Like to select all buttons/anchor tags in a particular section*/
+        }
+        /* Adjascent Selector */
+        h1 + p{
+                color: rgb(77, 209, 16);
+                font-size: x-large;
+                                        /* to mark adjascent selectors use: + sign..... eg: div */
+            }
+        section>span{
+            background-color: rgb(9, 62, 45);
+            color: blueviolet;
+        }
+
+        /* Attribute Selector             https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors   */
+        input[type="password"]{
+            color: coral;
+        }
+        input[type="text"]{
+            color: rgb(99, 11, 157);
+        }
+
+    </style>        
+</head>
+<body>
+    <h1><b>CSS Selectors Tutorial</b></h1>
+    <p>Extra para</p>
+    <p class="RedElement">This is a pargraph</p>
+    <p id="Secondpara" class="RedElement BgcolorYellow"> This is also a <a href="/nothing">pargraph</a> with a id</p>
+
+    <input type="text" name="user">
+    <input type="password">
+
+    <div>
+        <section>
+            <ul>
+                <li>unordered</li>
+                <li>unordered</li>
+                
+            </ul>
+                tect btw lists
+            <ol>
+                <li>ordered</li>
+                <li>ordered</li>
+                
+            </ol>
+
+            <span>
+                span under section.
+            </span>
+        </section>
+    </div>
+    <div id="BgcolorYellow">
+        <p >This is pargraphh inside div. </p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer.</footer>
+</body>
+</html>

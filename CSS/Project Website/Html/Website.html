@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(bg.jpg);
+        /* border: 2px solid rgb(221, 28, 28); */
+        /* height: 3440px; */
+        /* width: 3440px; */
+        color: blueviolet;
+        
+    }
+    .navbar{
+        display: inline-block ;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: wheat;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+    .left{
+        border:  2px solid red;
+        color: rgb(241, 145, 28);
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 18px;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        
+        margin: 18px auto;
+        border:  2px solid rgb(255, 25, 244);
+        color: rgb(241, 145, 28);
+    }
+    .right{
+        position: absolute;
+        border:  2px solid rgb(8, 59, 225);
+        color: rgb(241, 145, 28);
+        display: inline-block;
+        right: 34px;
+        top: 18px;
+    }
+</style>
+<body>
+    <header class="header">
+       
+        <div class="left">
+            left side
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <!-- for buttons -->right side
+        </div>
+    </header>
+</body>
+</html>

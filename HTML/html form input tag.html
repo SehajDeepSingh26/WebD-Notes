@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms Tutorial</title>
+</head>
+
+<body>
+    <h2>This is HTML forms Tutorial</h2>
+    <form action="backend.php">
+        <br>
+        <label for="name"> Name</label>
+        <input type="text" name="myname" id="name">
+        <div>
+            <br>
+            <label for="myroll"> Roll: </label>
+            <input type="text" name="myroll" id="myroll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail" placeholder="email" required>         <!--We can write Enter email in a label tag as well using id  -->
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" placeholder="password" minlength="6" maxlength="15" required>
+        </div>
+        <br>
+        <div>
+            <input type="color">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            Number: <input type="number" name="mynumber" min="0" max="1000" step="2">
+        </div>
+        <br>
+        <div>
+        <label for="checkbox" >Are you 18+ ? : </label>
+            <input type="checkbox" name="myage" id="checkbox" checked>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="size" id="xs" value="XS">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="l" value="L">
+            <label for="l">L</label>
+            <input type="radio" name="size" id="m" value="M">
+            <label for="m">M</label>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="ind">indica</option>
+                <option value="swf">Swift</option>
+                <option value="toyt" selected>Toyota</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Gender: <br>male 
+            <input type="radio" name="mygender"><br> female <input type="radio" name="mygender">
+            <br>other <input type="radio" name="mygender" required  >
+        </div>
+        <br>
+        <div>
+            <label for="slider">Volume</label>
+            <input type="range" name="range" id="ransliderge" min="0" max="10" step="1" value="7">
+        </div>
+        <br>
+        <div>
+            Write about Yourself: <br>
+            <textarea name="mytext" cols="10" rows="5" placeholder="Type somethin here.."> </textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset now">
+        </div>
+        <br>
+        <br>
+    </form>
+    <hr size="8" color="black">
+    <div>
+        <h3> Search on Google: </h3>
+        <!-- https://www.google.com/search?q=dog -->
+        <form action="https://www.google.com/search?">
+            <input type="text" name="q" placeholder="Enter to search">
+            <button> Search Google </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h3> Search on Youtube: </h3>
+        <form action="https://www.youtube.com/results?">
+            <input type="text" name="search_query" placeholder="Enter to search" required>
+            <button> Search Youtube </button>
+        </form>
+    </div>
+</body>
+
+</html>
