@@ -21,7 +21,7 @@
     #container {
         background-color: #003049;
         width: 90%;
-        height: 500px;
+        height: 300px;
         margin: 0 auto;
         border: 5px solid #003049;
 
@@ -57,6 +57,37 @@
         <div style="background-color: #6930c3"></div>
     </section>
 
+    <h1>Another example: </h1>
+
+    <main>
+        <section class="sidebar"></section>
+        <section class="maincontent"></section>
+        <section class="sidebar" id="right"></section>
+    </main>
+    <style>
+        main{
+            width: 80%;
+            margin: 0 auto;
+            border: 5px solid black;
+            height: 500px;
+            display: flex;
+        }
+        #right{
+            background-color: red;
+        }
+        .sidebar{
+
+            background-color: darkblue;
+            border: 2px solid white;
+            /* flex: 1;                    It will automatically take flex: 1 as flex-grow. */
+            /* flex: 1 200px;                  flex: flex-grow | flex-basis */
+            flex: 1 2 200px;                /* flex: flex-grow | flex shrink | flex-basis */
+        }
+        .maincontent{
+            background-color: white;
+            flex: 2 1 600px;
+        }
+    </style>
 </body>
 
 </html>
