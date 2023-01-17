@@ -40,23 +40,25 @@
         /* align-items: baseline;  This is to align the elements within the block according to the base of text inside      
                                     the blocks */
 
+        /* 
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-end;
-        align-content: center;  /*This will work only when wrap is enabled.. It will adjust the content according 
+        align-content: center;  This will work only when wrap is enabled.. It will adjust the content according 
                                     to the command. */
+         
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
-        align-content: flex-start;
+        /* align-content: flex-start; */
     }
 
     div:nth-of-type(2){
         align-self: center;
     }
     div:nth-of-type(3){
-        align-self: flex-start;
+        align-self: flex-end;
     }
 
     #container div{
