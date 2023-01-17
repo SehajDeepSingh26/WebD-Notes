@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Playground</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #container {
+        background-color: #003049;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        border: 5px solid #003049;
+
+        display: flex;
+
+        flex-direction: column;           /*by default it is set to row. */
+        flex-direction: row-reverse;     
+
+        justify-content: center;          /* other: end, left...*/
+        justify-content: space-around;     /*other options are: space-btw, space-evenly.... */
+          
+    }
+    #container div{
+        width: 200px;
+        height: 200px;
+    }
+
+</style>
+
+<body>
+    <h1>Let's Play With Flexbox</h1>
+
+    <section id="container">
+        <div style="background-color: #80ffdb"></div>
+        <div style="background-color: #64dfdf"></div>
+        <div style="background-color: #48bfe3"></div>
+        <div style="background-color: #5390d9"></div>
+        <div style="background-color: #6930c3"></div>
+    </section>
+
+</body>
+
+</html>
