@@ -1,3 +1,15 @@
 body{
     background-color: #f5d9d5;
+    font-family: "nanito", sans-serif;
 }
+#mainNavbar .navbar-brand{
+    color: #EA1C2C;
+    size: 1.5 rems;
+    font-weight: 100;
+}
+#mainNavbar{
+    size: 1.5 rems;
+    font-weight: 100;
+
+}
+
